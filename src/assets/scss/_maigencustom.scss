@@ -10,7 +10,7 @@ body {
       font-weight: bold;
       font-size: 2em;
       margin-top: 1rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
     h3.section-header {
       text-transform: uppercase;
@@ -23,99 +23,174 @@ body {
   }
   div.secondary-nav {
     text-align: center;
-    font-size: .75rem;
+    font-size: .7rem;
     letter-spacing: 0.5px;
+    margin-bottom: 3rem;
+    @include breakpoint (medium down) {
+      margin-bottom: 1.5rem;
+    }
     a {
       color: $darkest-gray;
-      padding: 0 2rem;
+      padding: 0 1.2rem;
+      @include breakpoint (small only) {
+        padding: 0 .15rem;
+      }
     }
     span {
       font-size:1rem;
-      font-weight: 600;
+      font-weight: 500;
       color: $darkest-gray;
     }
   }
-}
 
-.responsive-embed {
-  padding-bottom: 43%;
-}
-
-.grid-padding-x {
-  .cell {
-    .shoe-container {
-      margin-bottom: 1rem;
-      padding-left: .5rem;
-      padding-right: .5rem;
-      .shoes, .essentials {
-        padding: 0 .1rem;
-      }
-      .shoes {
-        .featured-shoe {
-          .shoe-deets {
-            font-size: 10px;
-            margin-top:1rem;
-            .shoe-name { 
-              font-weight: 400;
-              color: $darkest-gray;
-            }
-            .shoe-type { 
-              font-weight: 400;
-              color: $dark-gray
+  .grid-padding-x {
+    .cell {
+      .shoe-container {
+        margin-bottom: 1rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        .shoes, .essentials {
+          padding: 0 .1rem;
+        }
+        .shoes {
+          .featured-shoe {
+            .shoe-deets {
+              font-size: 10px;
+              margin-top:1rem;
+              .shoe-name { 
+                font-weight: 400;
+                color: $darkest-gray;
+              }
+              .shoe-type { 
+                font-weight: 400;
+                color: $dark-gray
+              }
             }
           }
         }
       }
     }
   }
-}
 
 
-.section-container {
-  &.section1 {
-    .link-text-container { margin-top: -42%; }
-  }
-  &.section2, &.section3 {
-    .link-text-container { margin-top: -30%; }
-  }
-  .link-text-container {
-    height: 50%;
-    position: relative;
-    max-width: 30%;
-    margin-left: 4%;
-    .link-text {
-      &.black { color: $black; }
-      &.white { color: $white; }
-      h2.title-headline {
-        p.head1 {
-          text-transform: uppercase;
+  .section-container {
+    .full-size-image-background {
+      height: 15rem;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .link-text-container { 
+      margin-top: -60%;
+      height: 50%;
+      position: relative;
+      margin-left: 4%;      
+      .link-text {
+        &.black { color: $black; }
+        &.white { color: $white; }        
+        h2.title-headline {
+          margin-bottom: 0;
+          p.head1 {
+            text-transform: uppercase;
+            font-weight: bolder;
+            font-stretch: semi-condensed;
+            line-height: normal;
+            font-size: 1.5rem;
+          }          
+          p.head2 {
+            margin-bottom: .5rem;
+            font-size: .75rem;
+            line-height:1rem;            
+          }
+          @include breakpoint (small only) {
+            p.head1 { 
+              font-size: 1rem;
+
+            }
+            p.head2 { 
+              font-size: .65rem;
+              margin-top: -.5rem;
+              max-width: 105px;
+              line-height: .75rem;
+            }
+          }          
+        }
+      }
+      .link-cta {
+        span {
+          padding: .7rem 1.1rem;
+          font-size: 11px;
           font-weight: bolder;
-          font-stretch: semi-condensed;
-          line-height: normal;
-          font-size: 1.5rem;
+          font-stretch: condensed;
+          border-radius: 3px;
+          &.black {
+            color: $white;
+            background-color: $black;
+          }
+          &.white {
+            color: $black;
+            background-color: $white;
+          }
+          @include breakpoint (small only) {
+            font-size: 10px;
+            padding: .5rem .75rem;
+          }
         }
-        p.head2 {
-          font-size: .75rem;
-          line-height:1rem;
-        }
-      }
+      }      
     }
-    .link-cta {
-      span {
-        padding: .7rem 1.1rem;
-        font-size: 11px;
-        font-weight: bolder;
-        font-stretch: condensed;
-        border-radius: 3px;
-        &.black {
-          color: $white;
-          background-color: $black;
+
+
+
+
+    &.section1 {
+      .full-size-image-background {
+        background-image: url("nikeheader.jpg");
+        background-position: 35% 50%;        
+      }     
+    }
+    &.section2.section-container {
+      .full-size-image-background {
+        background-image: url("nikeheader2.jpg");
+        background-position: 35% 50%;
+      }     
+    }
+    &.section3 {
+      .full-size-image-background {
+        background-image: url("nikeheader3.jpg");
+        background-position: 50% 50%;
+      }     
+    }
+  }
+
+  .essentials-section {
+    margin-left: auto;
+    margin-right: auto;    
+    .essentials {
+      .essentials-image {
+        height: 14rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 48%;
+        margin: .15rem;
+        float: left;
+        background-position: 50% 50%;
+        span {
+          font-size: 10px;
         }
-        &.white {
-          color: $black;
-          background-color: $white;
+        &.eimage1 {
+          background-image: url("essentials1.jpg");
         }
+        &.eimage2 {
+          background-image: url("essentials2.jpg");
+        }
+        &.eimage3 {
+          background-image: url("essentials3.jpg");
+        }
+        &.eimage4 {
+          background-image: url("essentials4.jpg");
+        }                        
       }
     }
   }
 }
+

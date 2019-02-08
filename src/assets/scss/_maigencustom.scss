@@ -8,6 +8,9 @@ body {
       font-stretch: ultra-condensed;
       letter-spacing:-1px;
       font-weight: bold;
+      font-size: 2em;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
     }
     h3.section-header {
       text-transform: uppercase;
@@ -16,6 +19,20 @@ body {
       font-weight:600;
       font-size: 1rem;
       margin-top: 1.5rem;
+    }
+  }
+  div.secondary-nav {
+    text-align: center;
+    font-size: .75rem;
+    letter-spacing: 0.5px;
+    a {
+      color: $darkest-gray;
+      padding: 0 2rem;
+    }
+    span {
+      font-size:1rem;
+      font-weight: 600;
+      color: $darkest-gray;
     }
   }
 }
@@ -55,12 +72,17 @@ body {
 
 
 .section-container {
+  &.section1 {
+    .link-text-container { margin-top: -42%; }
+  }
+  &.section2, &.section3 {
+    .link-text-container { margin-top: -30%; }
+  }
   .link-text-container {
     height: 50%;
     position: relative;
     max-width: 30%;
-    margin-top: -42%;
-    margin-left: 2%;
+    margin-left: 4%;
     .link-text {
       &.black { color: $black; }
       &.white { color: $white; }
@@ -70,20 +92,19 @@ body {
           font-weight: bolder;
           font-stretch: semi-condensed;
           line-height: normal;
-          font-size: .8em;
-          letter-spacing: -1px;
+          font-size: 1.5rem;
         }
         p.head2 {
-          font-size: .35em;
+          font-size: .75rem;
           line-height:1rem;
         }
       }
     }
     .link-cta {
       span {
-        padding: .75rem 1rem;
-        font-size: 12px;
-        font-weight:600;
+        padding: .7rem 1.1rem;
+        font-size: 11px;
+        font-weight: bolder;
         font-stretch: condensed;
         border-radius: 3px;
         &.black {

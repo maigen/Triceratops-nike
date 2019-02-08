@@ -1,0 +1,100 @@
+body {
+  div.grid-container {
+    margin: 0;
+    max-width:100%;
+    h1.niketitle {
+      text-align: center;
+      text-transform: uppercase;
+      font-stretch: ultra-condensed;
+      letter-spacing:-1px;
+      font-weight: bold;
+    }
+    h3.section-header {
+      text-transform: uppercase;
+      font-stretch: ultra-condensed;
+      letter-spacing: -0.5px;
+      font-weight:600;
+      font-size: 1rem;
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+.responsive-embed {
+  padding-bottom: 43%;
+}
+
+.grid-padding-x {
+  .cell {
+    .shoe-container {
+      margin-bottom: 1rem;
+      padding-left: .5rem;
+      padding-right: .5rem;
+      .shoes, .essentials {
+        padding: 0 .1rem;
+      }
+      .shoes {
+        .featured-shoe {
+          .shoe-deets {
+            font-size: 10px;
+            margin-top:1rem;
+            .shoe-name { 
+              font-weight: 400;
+              color: $darkest-gray;
+            }
+            .shoe-type { 
+              font-weight: 400;
+              color: $dark-gray
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.section-container {
+  .link-text-container {
+    height: 50%;
+    position: relative;
+    max-width: 30%;
+    margin-top: -42%;
+    margin-left: 2%;
+    .link-text {
+      &.black { color: $black; }
+      &.white { color: $white; }
+      h2.title-headline {
+        p.head1 {
+          text-transform: uppercase;
+          font-weight: bolder;
+          font-stretch: semi-condensed;
+          line-height: normal;
+          font-size: .8em;
+          letter-spacing: -1px;
+        }
+        p.head2 {
+          font-size: .35em;
+          line-height:1rem;
+        }
+      }
+    }
+    .link-cta {
+      span {
+        padding: .75rem 1rem;
+        font-size: 12px;
+        font-weight:600;
+        font-stretch: condensed;
+        border-radius: 3px;
+        &.black {
+          color: $white;
+          background-color: $black;
+        }
+        &.white {
+          color: $black;
+          background-color: $white;
+        }
+      }
+    }
+  }
+}

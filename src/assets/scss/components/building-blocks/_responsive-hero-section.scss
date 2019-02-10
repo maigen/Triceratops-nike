@@ -7,25 +7,25 @@
   @include breakpoint (xlarge) {
     height: 80vh;
   }
-  @include breakpoint (large only) {
+  @include breakpoint (large down) {
     height: 70vh;
   }
-  @include breakpoint (medium only) {
+  @include breakpoint (medium down) {
     height: 40vh;
   }
   @include breakpoint (small only) { 
     height: 25vh;
   }
   &.hero1 { 
-    background: url('nikeheader.jpg') 50% no-repeat;
+    background: url('/assets/img/nikeheader.jpg') 50% no-repeat;
     background-size: cover;
   }
   &.hero2 { 
-    background: url('nikeheader2.jpg') 50% no-repeat;
+    background: url('/assets/img/nikeheader2.jpg') 50% no-repeat;
     background-size: cover;
   }
   &.hero3 { 
-    background: url('nikeheader3.jpg') 50% no-repeat;
+    background: url('/assets/img/nikeheader3.jpg') 50% no-repeat;
     background-size: cover;
   }
   .hero-section-text {
@@ -40,7 +40,6 @@
       text-transform: uppercase;
       font-weight: bolder;
       font-stretch: semi-condensed;
-      line-height: 2.25rem;
       font-size: 2.5rem;
       clear: both;
       float: left;
@@ -57,6 +56,7 @@
     @include breakpoint (small only) {
       span.head1 {
         font-size: 1rem;
+        line-height: normal;
       }
       span.head2 {
         font-size: .65rem;
@@ -67,6 +67,9 @@
       }
     }
     @include breakpoint (medium) {
+      span.head1 {
+        line-height: 2.25rem;
+      }
       span.head2 {
         max-width: 40%;
       }

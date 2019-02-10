@@ -14,7 +14,7 @@
     height: 40vh;
   }
   @include breakpoint (small only) { 
-    height: 25vh;
+    height: 28vh;
   }
   &.hero1 { 
     background: url('/assets/img/nikeheader.jpg') 50% no-repeat;
@@ -28,6 +28,13 @@
   &.hero3 { 
     background: url('/assets/img/nikeheader3.jpg') 50% no-repeat;
     background-size: cover;
+  }
+  @include breakpoint (large) {
+    &.hero2, &.hero3 {
+      .hero-section-text {
+        padding-top: 20%;
+      }
+    }    
   }
   .hero-section-text {
     text-align: left;

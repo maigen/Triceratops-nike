@@ -21,7 +21,7 @@ body {
       font-weight:600;
       font-size: 1rem;
       margin-top: 1.5rem;
-      padding-left: .25rem;
+      padding-left: .5rem;
     }
   }
   div.secondary-nav {
@@ -54,12 +54,13 @@ body {
         width:101%;
         margin-right: auto;
         @include breakpoint (medium down) { margin-left: .25rem; }
-        @include breakpoint (xxlarge down) { margin-left: 1rem; }
+        @include breakpoint (xxlarge down) { margin-left: .5rem; }
         .shoes, .essentials {
           padding: 0 .1rem;
         }
         .shoes {
           width: 24.5%;
+          @include breakpoint (small only) { width: 49%; }
           .featured-shoe {
             .shoe-deets {
               font-size: 14px;
@@ -94,7 +95,7 @@ body {
       .essentials-image {
         background-size: cover;
         background-repeat: no-repeat;
-        margin: .15rem;      
+        margin: .1rem;      
         float: left;
         display: inline-block;
         background-position: 50% 50%;

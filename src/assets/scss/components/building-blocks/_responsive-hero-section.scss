@@ -1,4 +1,4 @@
-
+// so many issues with width, which definitely boils down to using a framework I've never tried before. //
 .hero-section {
   width: 101%;
   background-size: cover;
@@ -62,6 +62,7 @@
       margin-bottom: 1rem;
       margin-top: .5rem;
     }
+    // really, really love how easy the media queries are in the new version of foundation! //
     @include breakpoint (small only) {
       span.head1 {
         font-size: 1rem;

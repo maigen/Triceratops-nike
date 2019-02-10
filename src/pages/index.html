@@ -5,16 +5,20 @@
         </div>
       </div>
 
+      <!-- getting to know the newest version of Foundation, I bet this would be better suited as a stand-alone partial, to clean up the page a bit. -->
       <div class="secondary-nav">
         <p class="labels">
-          <a href="" class="label1">Shoes</a><span>|</span>
-          <a href="" class="label2">Clothing</a><span>|</span>
-          <a href="" class="label3">Nike Tech Pack</a><span>|</span>
-          <a href="" class="label4">Best Sellers</a><span>|</span>
-          <a href="" class="label5">Sale</a>
+          <a href="https://store.nike.com/us/en_us/pw/womens-shoes/7ptZoi3" class="label1">Shoes</a><span>|</span>
+          <a href="https://store.nike.com/us/en_us/pw/womens-clothing/1mdZ7pt" class="label2">Clothing</a><span>|</span>
+          <a href="https://store.nike.com/us/en_us/pw/womens-tech-pack/7ptZo6k" class="label3">Nike Tech Pack</a><span>|</span>
+          <a href="https://store.nike.com/us/en_us/pw/womens-nike-best/7ptZpjmZpi1" class="label4">Best Sellers</a><span>|</span>
+          <a href="https://store.nike.com/us/en_us/pw/womens-clearance/47Z7pt" class="label5">Sale</a>
         </p>
       </div>
 
+      <!-- The full screen image sections got me a little excited in the early versions and I tried to recreate the wheel, forgetting that I shouldn't ever work to rewrite something that is already baked in. -->
+
+      <!-- First Full Screen Section -->
       <a href="https://www.nike.com/t/epic-react-flyknit-2-womens-running-shoe-5r9NpJ/BQ8927-001">
         <div class="hero-section hero1">
           <div class="hero-section-text black">
@@ -27,7 +31,7 @@
         </div>      
       </a>
 
-
+      <!-- I initially had these images being delivered to the view with css, but adding the assets here allowed me to keep the css cleaner. Ideally, I would know Foundation better and create each of these as a partial and pass in the titles and images using the handlebars -->
       <h3 class="section-header">the new must-haves</h3>
       <div class="grid-x">
         <div class="large-12 medium-12 small-12 cell">
@@ -98,6 +102,8 @@
         </div>
       </a>   
 
+
+      <!-- ran into some frustrating issues with baked-in padding on different elements in Foundation, which were due to me not knowing the newest version of Foundation very well and also trying to get ultra-nit-picky about pixel perfection. -->
       <h3 class="section-header">top-selling essentials</h3>
       <div class="essentials-section">
         <div class="large-12 medium-12 small-12 cell">

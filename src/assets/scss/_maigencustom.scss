@@ -21,7 +21,7 @@ body {
       font-weight:600;
       font-size: 1rem;
       margin-top: 1.5rem;
-      padding-left: .75rem;
+      padding-left: .25rem;
     }
   }
   div.secondary-nav {
@@ -47,20 +47,24 @@ body {
     }
   }
 
-  .grid-padding-x {
+  .grid-x {
     .cell {
       .shoe-container {
         margin-bottom: 1rem;
-        padding-left: .5rem;
-        padding-right: .5rem;
+        width:101%;
+        margin-right: auto;
+        @include breakpoint (medium down) { margin-left: .25rem; }
+        @include breakpoint (xxlarge down) { margin-left: 1rem; }
         .shoes, .essentials {
           padding: 0 .1rem;
         }
         .shoes {
+          width: 24.5%;
           .featured-shoe {
             .shoe-deets {
-              font-size: 10px;
+              font-size: 14px;
               margin-top:1rem;
+              padding-left: .25rem;
               .shoe-name { 
                 font-weight: 400;
                 color: $darkest-gray;
@@ -70,6 +74,11 @@ body {
                 color: $dark-gray
               }
             }
+            @include breakpoint (medium down) {
+              .shoe-deets {
+                font-size: 10px;
+              }
+            }
           }
         }
       }
@@ -77,10 +86,11 @@ body {
   }
 
   .essentials-section {
-    width: 101%;
-    margin-left: .5rem;
-    margin-right: .5rem;
-    .essentials {     
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    .essentials {
+      margin-left: .2rem;
       .essentials-image {
         background-size: cover;
         background-repeat: no-repeat;
@@ -91,6 +101,7 @@ body {
         padding-top: .5rem;
         padding-left: .5rem;
         font-size: 12px;
+        margin-bottom: 1.5rem;
         &.eimage1 {
           background-image: url("/assets/img/essentials1.jpg");
         }
@@ -103,24 +114,28 @@ body {
         &.eimage4 {
           background-image: url("/assets/img/essentials4.jpg");
         }
-        @include breakpoint (xlarge) {
-          height: 22rem;
-        }
-        @include breakpoint (large only) {
-          height: 20rem;
-        }
         @include breakpoint (small only) {
           width: 48%;
           height: 13rem;
         }
         @include breakpoint (medium) {
-          width: 24%;
+          width: 24.5%;
+          height: 15rem;
         }
         @include breakpoint (medium down) {
           span {
             font-size: 10px;
           }          
         }
+        @include breakpoint (large only) {
+          height: 20rem;
+        }
+        @include breakpoint (xlarge) {
+          height: 22rem;
+        }
+        @include breakpoint (xxlarge) {
+          height: 30rem;
+        }          
       }
     }
   }

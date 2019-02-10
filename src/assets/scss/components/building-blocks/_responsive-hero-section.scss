@@ -23,6 +23,7 @@
   &.hero2 { 
     background: url('/assets/img/nikeheader2.jpg') 50% no-repeat;
     background-size: cover;
+    margin-bottom: 1rem;
   }
   &.hero3 { 
     background: url('/assets/img/nikeheader3.jpg') 50% no-repeat;
@@ -40,6 +41,7 @@
       text-transform: uppercase;
       font-weight: bolder;
       font-stretch: semi-condensed;
+      line-height: 2.5rem;
       font-size: 2.5rem;
       clear: both;
       float: left;
@@ -47,9 +49,9 @@
     span.head2 {
       clear: both;
       float: left;
-      font-size: .8rem;
+      font-size: 1rem;
       line-height:1rem;
-      max-width: 25%;
+      max-width: 30%;
       margin-bottom: 1rem;
       margin-top: .5rem;
     }
@@ -66,12 +68,14 @@
         margin-top: .5rem;
       }
     }
-    @include breakpoint (medium) {
+    @include breakpoint (medium only) {
       span.head1 {
         line-height: 2.25rem;
+        font-size: 2.25rem;
       }
       span.head2 {
         max-width: 40%;
+        font-size: .8rem;
       }
     }
   }

@@ -1,0 +1,98 @@
+
+.hero-section {
+  width: 101%;
+  background-size: cover;
+  padding-left: 4%;
+  padding-top: 4%;
+  @include breakpoint (xlarge) {
+    height: 80vh;
+  }
+  @include breakpoint (large only) {
+    height: 70vh;
+  }
+  @include breakpoint (medium only) {
+    height: 40vh;
+  }
+  @include breakpoint (small only) { 
+    height: 25vh;
+  }
+  &.hero1 { 
+    background: url('nikeheader.jpg') 50% no-repeat;
+    background-size: cover;
+  }
+  &.hero2 { 
+    background: url('nikeheader2.jpg') 50% no-repeat;
+    background-size: cover;
+  }
+  &.hero3 { 
+    background: url('nikeheader3.jpg') 50% no-repeat;
+    background-size: cover;
+  }
+  .hero-section-text {
+    text-align: left;
+    &.black {
+      color: $black;
+    }
+    &.white {
+      color: $white;
+    }
+    span.head1 {
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-stretch: semi-condensed;
+      line-height: 2.25rem;
+      font-size: 2.5rem;
+      clear: both;
+      float: left;
+    }          
+    span.head2 {
+      clear: both;
+      float: left;
+      font-size: .8rem;
+      line-height:1rem;
+      max-width: 25%;
+      margin-bottom: 1rem;
+      margin-top: .5rem;
+    }
+    @include breakpoint (small only) {
+      span.head1 {
+        font-size: 1rem;
+      }
+      span.head2 {
+        font-size: .65rem;
+        max-width: 105px;
+        line-height: .75rem;
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+      }
+    }
+    @include breakpoint (medium) {
+      span.head2 {
+        max-width: 40%;
+      }
+    }
+  }
+  .link-cta {
+    clear: both;
+    float: left;
+    span {
+      padding: .75rem 1.2rem;
+      font-size: 13px;
+      font-weight: bolder;
+      font-stretch: condensed;
+      border-radius: 3px;
+      &.black {
+        color: $white;
+        background-color: $black;
+      }
+      &.white {
+        color: $black;
+        background-color: $white;
+      }
+      @include breakpoint (small only) {
+        font-size: 10px;
+        padding: .5rem .75rem;
+      }
+    }
+  }
+}

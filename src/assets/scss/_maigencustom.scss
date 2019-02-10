@@ -99,24 +99,16 @@ body {
         float: left;
         display: inline-block;
         background-position: 50% 50%;
-        padding-top: .5rem;
-        padding-left: .5rem;
+        position: relative;
         font-size: 12px;
         margin-bottom: 1.5rem;
-        &.eimage1 {
-          background-image: url("/assets/img/essentials1.jpg");
-        }
-        &.eimage2 {
-          background-image: url("/assets/img/essentials2.jpg");
-        }
-        &.eimage3 {
-          background-image: url("/assets/img/essentials3.jpg");
-        }
-        &.eimage4 {
-          background-image: url("/assets/img/essentials4.jpg");
+        span {
+          padding-top: .5rem;
+          padding-left: .5rem;
+          position: absolute;
         }
         @include breakpoint (small only) {
-          width: 48%;
+          width: 49%;
           height: 13rem;
         }
         @include breakpoint (medium) {

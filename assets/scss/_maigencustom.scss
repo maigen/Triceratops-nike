@@ -1,0 +1,137 @@
+body {
+  div.grid-container {
+    padding: 0;
+    margin: 0;
+    max-width:100%;
+
+    h1.niketitle {
+      text-align: center;
+      text-transform: uppercase;
+      font-stretch: ultra-condensed;
+      letter-spacing:-1px;
+      font-weight: bold;
+      font-size: 2em;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    h3.section-header {
+      text-transform: uppercase;
+      font-stretch: ultra-condensed;
+      letter-spacing: -0.5px;
+      font-weight:600;
+      font-size: 1rem;
+      margin-top: 1.5rem;
+      padding-left: .5rem;
+    }
+  }
+  div.secondary-nav {
+    text-align: center;
+    font-size: .9rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 3rem;
+    @include breakpoint (medium down) {
+      margin-bottom: 1.5rem;
+      font-size: .7rem;
+    }
+    a {
+      color: $darkest-gray;
+      padding: 0 1.2rem;
+      @include breakpoint (small only) {
+        padding: 0 .15rem;
+      }
+    }
+    span {
+      font-size:1rem;
+      font-weight: 500;
+      color: $darkest-gray;
+    }
+  }
+
+  .grid-x {
+    .cell {
+      .shoe-container {
+        margin-bottom: 1rem;
+        width:101%;
+        margin-right: auto;
+        @include breakpoint (medium down) { margin-left: .25rem; }
+        @include breakpoint (xxlarge down) { margin-left: .5rem; }
+        .shoes, .essentials {
+          padding: 0 .1rem;
+        }
+        .shoes {
+          width: 24.5%;
+          @include breakpoint (small only) { width: 49%; }
+          .featured-shoe {
+            .shoe-deets {
+              font-size: 14px;
+              margin-top:1rem;
+              padding-left: .25rem;
+              .shoe-name { 
+                font-weight: 400;
+                color: $darkest-gray;
+              }
+              .shoe-type { 
+                font-weight: 400;
+                color: $dark-gray
+              }
+            }
+            @include breakpoint (medium down) {
+              .shoe-deets {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // when in doubt, murder it with media queries //
+  .essentials-section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    .essentials {
+      margin-left: .2rem;
+      .essentials-image {
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: .1rem;      
+        float: left;
+        display: inline-block;
+        background-position: 50% 50%;
+        position: relative;
+        font-size: 12px;
+        margin-bottom: 1.5rem;
+        span {
+          padding-top: .5rem;
+          padding-left: .5rem;
+          position: absolute;
+        }
+        @include breakpoint (small only) {
+          width: 49%;
+          height: 13rem;
+        }
+        @include breakpoint (medium) {
+          width: 24.5%;
+          height: 15rem;
+        }
+        @include breakpoint (medium down) {
+          span {
+            font-size: 10px;
+          }          
+        }
+        @include breakpoint (large only) {
+          height: 20rem;
+        }
+        @include breakpoint (xlarge) {
+          height: 22rem;
+        }
+        @include breakpoint (xxlarge) {
+          height: 30rem;
+        }          
+      }
+    }
+  }
+}
+
+

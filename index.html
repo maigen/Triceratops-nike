@@ -1,0 +1,139 @@
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <h1 class="niketitle">nikewomen</h1>
+        </div>
+      </div>
+
+      <!-- getting to know the newest version of Foundation, I bet this would be better suited as a stand-alone partial, to clean up the page a bit. -->
+      <div class="secondary-nav">
+        <p class="labels">
+          <a href="https://store.nike.com/us/en_us/pw/womens-shoes/7ptZoi3" class="label1">Shoes</a><span>|</span>
+          <a href="https://store.nike.com/us/en_us/pw/womens-clothing/1mdZ7pt" class="label2">Clothing</a><span>|</span>
+          <a href="https://store.nike.com/us/en_us/pw/womens-tech-pack/7ptZo6k" class="label3">Nike Tech Pack</a><span>|</span>
+          <a href="https://store.nike.com/us/en_us/pw/womens-nike-best/7ptZpjmZpi1" class="label4">Best Sellers</a><span>|</span>
+          <a href="https://store.nike.com/us/en_us/pw/womens-clearance/47Z7pt" class="label5">Sale</a>
+        </p>
+      </div>
+
+      <!-- The full screen image sections got me a little excited in the early versions and I tried to recreate the wheel, forgetting that I shouldn't ever work to rewrite something that is already baked in. -->
+
+      <!-- First Full Screen Section -->
+      <a href="https://www.nike.com/t/epic-react-flyknit-2-womens-running-shoe-5r9NpJ/BQ8927-001">
+        <div class="hero-section hero1">
+          <div class="hero-section-text black">
+            <span class="head1">the new<br>epic react 2</span>
+            <span class="head2">Instant GO for your springiest, bounciest, most comfortable miles yet.</span>
+          </div>
+          <div class="link-cta">
+            <span class="black">SHOP</span>
+          </div>        
+        </div>      
+      </a>
+
+      <!-- I initially had these images being delivered to the view with css, but adding the assets here allowed me to keep the css cleaner. Ideally, I would know Foundation better and create each of these as a partial and pass in the titles and images using the handlebars -->
+      <h3 class="section-header">the new must-haves</h3>
+      <div class="grid-x">
+        <div class="large-12 medium-12 small-12 cell">
+          <div class="grid-x grid-padding-x shoe-container">
+            <div class="large-3 medium-3 small-6 cell shoes">
+              <a href="https://www.nike.com/t/air-vapormax-2019-womens-shoe-kkCRgF/AR6632-300" class="featured-shoe">
+                <img src="assets/img/shoe1.jpg" frameborder="0"></img>
+                <p class="shoe-deets">
+                  <span class="shoe-name"><strong>Nike Air Vapor Max 2019</strong></span><br>
+                  <span class="shoe-type">Women's Shoe</span>
+                </p>
+              </a>
+            </div>
+            <div class="large-3 medium-3 small-6 cell shoes">
+              <a href="https://www.nike.com/t/air-max-dia-womens-shoe-Nvf6tm/AQ4312-101" class="featured-shoe">
+                <img src="assets/img/shoe2.jpg" frameborder="0"></img>
+                <p class="shoe-deets">
+                  <span class="shoe-name"><strong>Nike Air Max Dia</strong></span><br>
+                  <span class="shoe-type">Women's Shoe</span>
+                </p>
+              </a>
+            </div>
+            <div class="large-3 medium-3 small-6 cell shoes">
+              <a href="https://www.nike.com/t/zoom-pegasus-turbo-womens-running-shoe-7DrhsB" class="featured-shoe">
+                <img src="assets/img/shoe3.jpg" frameborder="0"></img>
+                <p class="shoe-deets">
+                  <span class="shoe-name"><strong>Nike Zoom Pegasus Turbo</strong></span><br>
+                  <span class="shoe-type">Women's Running Shoe</span>
+                </p>
+              </a>
+            </div>
+            <div class="large-3 medium-3 small-6 cell shoes">
+              <a href="https://www.nike.com/t/air-zoom-pegasus-35-womens-running-shoe-k960G1/942855-404" class="featured-shoe">
+                <img src="assets/img/shoe4.jpg" frameborder="0"></img>
+                <p class="shoe-deets">
+                  <span class="shoe-name"><strong>Nike Air Zoom Pegasus 35</strong></span><br>
+                  <span class="shoe-type">Women's Running Shoe</span>
+                </p>
+              </a>
+            </div> 
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Full Screen Section -->
+      <a href="https://store.nike.com/us/en_us/pw/womens-cold-weather/7ptZrc2">
+        <div class="hero-section hero2">
+          <div class="hero-section-text white">
+            <span class="head1">your every day layer</span>
+            <span class="head2">Explore new Fleece styles and silhouettes.</span>
+          </div>
+          <div class="link-cta">
+            <span class="white">SHOP</span>
+          </div>        
+        </div>
+      </a>  
+
+      <!--Third Full Screen Section -->
+      <a href="https://store.nike.com/us/en_us/pw/womens-yoga/7ptZpdc">
+        <div class="hero-section hero3">
+          <div class="hero-section-text black">
+            <span class="head1">yoga transforms you</span>
+            <span class="head2">Trainers, skaters, runners and fencers - athletes from all sports are experiencing the power of yoga.</span>
+          </div>
+          <div class="link-cta">
+            <span class="black">SHOP</span>
+          </div>        
+        </div>
+      </a>   
+
+
+      <!-- ran into some frustrating issues with baked-in padding on different elements in Foundation, which were due to me not knowing the newest version of Foundation very well and also trying to get ultra-nit-picky about pixel perfection. -->
+      <h3 class="section-header">top-selling essentials</h3>
+      <div class="essentials-section">
+        <div class="large-12 medium-12 small-12 cell">
+
+          <div class="grid-x grid-padding-x essentials">
+            <div class="large-3 medium-3 small-6 essentials-image eimage2">
+              <span class="essentials-label">Sports Bras</span>
+              <a href="https://store.nike.com/us/en_us/pw/womens-sports-bras/7ptZobo" class="">
+                <img src="/assets/img/essentials1.jpg" frameborder="0"></img>
+              </a>
+            </div>
+            <div class="large-3 medium-3 small-6 essentials-image eimage2">
+              <span class="essentials-label">Pants & Tights</span>
+              <a href="https://store.nike.com/us/en_us/pw/womens-pants-tights/7ptZobs" class="">
+                <img src="/assets/img/essentials2.jpg" frameborder="0"></img>
+              </a>
+            </div>
+           <div class="large-3 medium-3 small-6 essentials-image eimage3">
+              <span class="essentials-label">Tops & T-Shirts</span>
+              <a href="https://store.nike.com/us/en_us/pw/womens-tops-t-shirts/7ptZobps" class="">
+                <img src="/assets/img/essentials3.jpg" frameborder="0"></img>
+              </a>
+            </div>
+           <div class="large-3 medium-3 small-6 essentials-image eimage4">
+              <span class="essentials-label">Shorts</span>
+              <a href="https://store.nike.com/us/en_us/pw/womens-shorts/7ptZobt" class="">
+                <img src="/assets/img/essentials4.jpg" frameborder="0"></img>
+              </a>
+            </div>                                   
+          </div>
+        </div>
+      </div>
+    </div>
